@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .textInput{
+            width: 30%;
+            padding: 8px;
+            margin: 4px 0;
+            margin-bottom: 15px;
+            border: 1px solid #d0cfcf;
+            border-radius: 3px;
+        }
+
+        .formLabel{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+
+      /* The <label> in HTML are inline elements by default, so they are going to occupy only as much space as they need and vertical properties like margin-top and margin-bottom
+      will not work on them. To fix this we need to change these labels to block(occupy the complete line) elements or inline-block(act as block stays in same line). */
+        #GenderMenu, #CheckMenu, #DropMenu{
+            display: inline-block;    
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+
+        #button{
+            width: 30%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Homework</h1>
+
+  <!-- In a form the action attribute defines the route where the data should be send (it should be a URL, leading to the backend) and the method attribute defines the
+  HTTP request used with the data like GET(which is used to get a response in return from server) and POST(which is used to post the data to the server). -->
+    <form action="/submit" method="POST">
+        <!-- In label the 'for' attribute is used to target an element through CSS like label[for="first name"]{ //CSS }  -->
+        <label for="first name" class="formLabel">First Name:</label> <br>
+            <!-- In inputs the type signifies the type of input that can be entered in the field like normal text, email or password. The name attribute signifies the
+            key for the value(first name: user input) which is going to be sent to the server. -->
+            <input type="text" id="first name" class="textInput" name="first name" placeholder="Enter First Name"> <br>
+        <label for="last name" class="formLabel">Last Name:</label> <br>
+            <input type="text" id="last name" class="textInput" name="last name" placeholder="Enter Last Name"> <br>
+        <label for="email" class="formLabel">Email:</label> <br>
+            <input type="email" id="email" class="textInput" name="email" placeholder="Enter Email"> <br>
+        <label for="password" class="formLabel">Password:</label> <br>
+            <input type="password" id="password" class="textInput" name="password" placeholder="Enter Password"> <br>  
+
+        <label for="gender" id="GenderMenu" class="formLabel">Gender:</label> <br>
+          <!-- In radio buttons the input should be defined before the label to get the typical radio buttons menu. Here the value is pre-defined for each radiobuton -->
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male" class="formLabel">Male</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="female" class="formLabel">Female</label>
+            <input type="radio" id="other" name="Gender" value="Other">
+            <label for="other" class="formLabel">Other</label> <br>
+
+        <label for="interests" id="CheckMenu" class="formLabel">Interests:</label> <br>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports" class="formLabel">Sports</label> <br>
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music" class="formLabel">Music</label> <br>
+            <input type="checkbox" id="Reading" name="interests" value="Reading">
+            <label for="Reading" class="formLabel">Reading</label> <br>
+            <input type="checkbox" id="Travelling" name="interests" value="Travelling">
+            <label for="Travelling" class="formLabel">Travelling</label> <br>
+
+        <label for="country" id="DropMenu" class="formLabel">Country:</label> <br>
+            <select id="country" name="Country" class="textInput">
+                <!-- In a dropdown menu we can use the "selected" attribute to display this option when the menu is closed. Another attribute "disabled" can be used if
+                we don't want this option to be selected by the user(it is greyed out). -->
+                <option selected disabled>Select</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+                <option value="Poland">Poland</option>
+            </select>
+
+        <br>
+        <button id="button" type="Submit">Submit</button>
+
+    </form>
+</body>
+</html>
