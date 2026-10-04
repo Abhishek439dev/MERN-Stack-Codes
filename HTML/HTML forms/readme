@@ -4,3 +4,4 @@ It allows us to create labels, input fields, text area, buttons, checkboxes, rad
 The uploaded example shows a form which has some lables for name, email, password. It also has radiobuttons, checkboxes and dropdown menu for taking differnet inputs.
 We have used a little CSS as well to style the form instead of creating a raw HTML page.
 
+
