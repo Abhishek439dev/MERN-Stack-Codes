@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Non-Semantic Tags:</h1>
+
+    <!-- i) div : it is used for grouping, layout and styling purposes. It does not describes a specific function. Thus it is a non-semantic tag. 
+    Here the div tag has grouped a h2, p and an ul list. It's a block element so it can enclose both inline and block elements.-->
+    <div>
+        <h2>Div Tag</h2>
+        <p>Introduction: The div tag is a non-semantic tag which is used to group together the content. It does not provide any meaning to the content it contains. It is used for grouping, styling and layout purposes.
+        div tag is a block-level element which means it will occupy the complete width of the parent element and will start on a new line just like, this div has started on a new line after the heading.<br>
+        The elements after a div will also start on a new line. It can contain other block-level elements like headings, paragraphs, lists, etc. and inline elements like links, images, etc.</p>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <!-- ii) span : it is another non-semantic tag used for grouping, layouting and styling the elements in inline manner. As span is an inline tag it can enclose only the
+    inline elements, the block-level elements should not be placed under span as it may lead to unpredictable browser rendering and behaviour. -->
+    <h2>Span Tag</h2>
+        <p>Introduction: The span tag is another non-semantic tag which is used to group together the content. It does not provide any meaning to the content it contains as well. It is used for grouping, styling and layout purposes.
+        span tag is an inline element which means it will occupy only as much width as it needs and will not start on a new line.<br>
+        The elements within a span stays in same line and will also not start on a new line. It can contain other inline elements like links, images, etc. but cannot contain block-level elements like headings, paragraphs, lists, etc. <br>
+        This can be used to apply styles to a portion of text. This can also be used to group together inline elements for styling purposes like in a nav bar.</p>
+
+        <p>for example</p>
+        <!-- the span tag can be used to specifically target a small part of the content for styling purposes. -->
+        <p>1) In this example the <span style="background-color: yellow;">span</span> tag is used to highlight a portion of text.</p>
+        <p>2) In this example the span tag is used to group elements in a same line as we see in a nav bar.</p>
+        <!-- span tag is commonly used to create a navigational menu -->
+        <span>
+            <a href="#">Home</a> 
+            <a href="#">About</a> 
+            <a href="#">Contact</a>
+        </span>
+
+</body>
+</html>
