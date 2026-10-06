@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Audio Tag</h1>
+    <p>The audio tag is used to embed audio in a web page. It is a semantic tag which means it provides meaning to the content it contains. It is used to play audio on a web page. <br>
+    It's a block-level element and its attributes are almost similar to the video tag.</p>
+
+    <audio src="Assets/Audios/Audio.mp3" controls>
+        Your browser does not support the audio tag.
+    </audio>
+
+    <p>
+        The audio tag has several attributes like src, controls, autoplay, loop, muted, preload, etc. <br>
+        <ul>
+            <li>src: The src attribute is used to specify the path of the audio file.</li>
+            <li>controls: The controls attribute is used to display the audio controls.</li>
+            <li>autoplay: The autoplay attribute is used to play the audio automatically when the page loads.</li>
+            <li>loop: The loop attribute is used to play the audio in a loop.</li>
+            <li>muted: The muted attribute is used to mute the audio.</li>
+            <li>preload: The preload attribute is used to specify how the audio should be loaded when the page loads. It can be auto(loads the complete audio), metadata(loads only the audio metadata), or none(loads nothing).</li>
+        </ul>
+    </p>
+
+    <h2>Multiple Sources and Fallback Strategy for Audio tag</h2>
+    <audio controls preload="none">
+        <source src="Assets/Audios/Audio.m4a" type="audio/m4a">
+        <source src="Assets/Audios/Audio.ogg" type="audio/ogg">
+        <source src="Assets/Audios/Audio.opus" type="audio/opus">
+        Your browser does not support the audio tag.
+    </audio>
+</body>
+</html>
