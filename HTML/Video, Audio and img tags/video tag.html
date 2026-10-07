@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -32,6 +32,7 @@
 
     <h2>Multiple Sources and Fallback Strategy for Video tag</h2>
 
+    <!-- This is used in case if a browser does not support a specific video format. The browser will try to play the next video in the order of the source tags provided. If none of the sources are supported, the fallback text will be displayed. -->
     <video width="600" height="400" preload="none" controls poster="Assets/Images/thumbnail.png">
         <source src="Assets/Videos/video (2).webm" type="video/webm">
         <source src="Assets/Videos/video (3).mov" type="video/mov">
