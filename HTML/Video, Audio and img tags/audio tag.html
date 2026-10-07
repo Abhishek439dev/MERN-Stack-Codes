@@ -8,7 +8,8 @@
 <body>
     <h1>Audio Tag</h1>
     <p>The audio tag is used to embed audio in a web page. It is a semantic tag which means it provides meaning to the content it contains. It is used to play audio on a web page. <br>
-    It's a block-level element and its attributes are almost similar to the video tag.</p>
+    It's an inline  by default and its attributes are almost similar to the video tag.</p>
+
 
     <audio src="Assets/Audios/Audio.mp3" controls>
         Your browser does not support the audio tag.
@@ -27,6 +28,7 @@
     </p>
 
     <h2>Multiple Sources and Fallback Strategy for Audio tag</h2>
+    <!-- This is used in case if a browser does not support a specific audio format. The browser will try to play the next audio in the order of the source tags provided. If none of the sources are supported, the fallback text will be displayed. -->
     <audio controls preload="none">
         <source src="Assets/Audios/Audio.m4a" type="audio/m4a">
         <source src="Assets/Audios/Audio.ogg" type="audio/ogg">
