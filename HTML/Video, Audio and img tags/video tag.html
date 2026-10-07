@@ -8,7 +8,7 @@
 <body>
     <h2>Video Tag</h2>
     <p>The video tag is used to embed a video in a web page. It is a semantic tag which means it provides meaning to the content it contains. It is used to display videos on a web page.</p>
-    <p>The video tag is a block-level element which means it will occupy the complete width of its parent element.</p>
+    <p>The video tag is an inline element more specifically a replaced inline tag because its dimensions are dependent on the external content.</p>
 
     <video src="Assets/Videos/video (1).mp4" width="600" height="400" controls autoplay muted loop>
         Your browser does not support the video tag.
@@ -18,14 +18,15 @@
         The video tag has several attributes like src, width, height, controls, autoplay, loop, muted, poster, preload, etc. <br>
         <ul>
             <li>src: The src attribute is used to specify the path of the video file.</li>
-            <li>width: The width attribute is used to specify the width of the video player.</li>
-            <li>height: The height attribute is used to specify the height of the video player.</li>
+            <li>width: The width attribute is used to specify the width of the video player. It overrides the default width of the media.</li>
+            <li>height: The height attribute is used to specify the height of the video player.It overrides the default height of the media.</li>
             <li>controls: The controls attribute is used to display the video controls.</li>
             <li>autoplay: The autoplay attribute is used to play the video automatically when the page loads.</li>
             <li>loop: The loop attribute is used to play the video in a loop.</li>
             <li>muted: The muted attribute is used to mute the video.</li>
             <li>poster: The poster attribute is used to specify an image to be displayed before the video starts playing.</li>
-            <li>preload: The preload attribute is used to specify how the video should be loaded when the page loads. It can be auto(loads the complete video), metadata(loads only the video metadata), or none(loads nothing).</li>
+            <li>preload: The preload attribute is used to specify how the video should be loaded when the page loads. It can be auto(loads the complete video, good for short videos), 
+                metadata(loads only the video metadata like video length, good for large videos to save bandwidth), or none(loads nothing, good for non-essential videos).</li>
         </ul>
     </p>
 
