@@ -1,3 +1,4 @@
-This directory has a basic introduction to Linux all the commonly used Linux commands useful in software development and in interacting with 
-web servers because they are also linux based. These commands may also be helpful in learning DevOps. 
-
+This section has a basic introduction to Linux and all the commonly used Linux commands useful in software development. 
+These commands are of particular importance in interacting with web servers in cloud computing because they are also linux based. 
+These commands will also be helpful in learning DevOps, CI/CD etc.
+The document also has a basic introduction to the Vim which is a terminal based text editor along with a number of useful vim commands.
