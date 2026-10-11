@@ -55,32 +55,43 @@
             <!-- In inputs the type signifies the type of input that can be entered in the field like normal text, email or password. The name attribute signifies the
             key for the value(first name: user input) which is going to be sent to the server. -->
             <input type="text" id="first name" class="textInput" name="first name" placeholder="Enter First Name"> <br>
+        
         <label for="last name" class="formLabel">Last Name:</label> <br>
             <input type="text" id="last name" class="textInput" name="last name" placeholder="Enter Last Name"> <br>
+        
         <label for="email" class="formLabel">Email:</label> <br>
             <input type="email" id="email" class="textInput" name="email" placeholder="Enter Email"> <br>
+        
         <label for="password" class="formLabel">Password:</label> <br>
             <input type="password" id="password" class="textInput" name="password" placeholder="Enter Password"> <br>  
 
+        <!-- Radio Buttons -->
         <label for="gender" id="GenderMenu" class="formLabel">Gender:</label> <br>
           <!-- In radio buttons the input should be defined before the label to get the typical radio buttons menu. Here the value is pre-defined for each radiobuton -->
             <input type="radio" id="male" name="Gender" value="Male">
             <label for="male" class="formLabel">Male</label>
+        
             <input type="radio" id="female" name="Gender" value="Female">
             <label for="female" class="formLabel">Female</label>
+        
             <input type="radio" id="other" name="Gender" value="Other">
             <label for="other" class="formLabel">Other</label> <br>
 
+        <!-- Check Boxes -->
         <label for="interests" id="CheckMenu" class="formLabel">Interests:</label> <br>
             <input type="checkbox" id="sports" name="interests" value="Sports">
             <label for="sports" class="formLabel">Sports</label> <br>
+        
             <input type="checkbox" id="music" name="interests" value="Music">
             <label for="music" class="formLabel">Music</label> <br>
+        
             <input type="checkbox" id="Reading" name="interests" value="Reading">
             <label for="Reading" class="formLabel">Reading</label> <br>
+        
             <input type="checkbox" id="Travelling" name="interests" value="Travelling">
             <label for="Travelling" class="formLabel">Travelling</label> <br>
 
+        <!-- Drop down menu -->
         <label for="country" id="DropMenu" class="formLabel">Country:</label> <br>
             <select id="country" name="Country" class="textInput">
                 <!-- In a dropdown menu we can use the "selected" attribute to display this option when the menu is closed. Another attribute "disabled" can be used if
@@ -95,6 +106,8 @@
             </select>
 
         <br>
+        <!-- button can also be created using the <input> tag with type="submit" but the <button> tag is more flexible and can contain other elements like images, text, etc. 
+        The type attribute defines the type of button like submit, reset or button. -->
         <button id="button" type="Submit">Submit</button>
 
     </form>
