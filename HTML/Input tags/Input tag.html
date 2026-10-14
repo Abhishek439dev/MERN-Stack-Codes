@@ -12,10 +12,13 @@
   name is the key for the data submitted to server with a pre-defined value or a value entered by user.
   placeholder attribute is used to hint the user for entering an input
   required attribute makes it necessary to enter an input in that field.
-  min max attributes in number type field determines the minimum and maximum possible user input -->
+  maxlength attribute determines the maximum number of characters that can be entered in the text input field.
+  autofocus attribute is used to focus/highlight on a particular input field having this attribute when the page loads.
+  size attribute determines the width of the input field in terms of number of characters.
+  min and max attributes in number type field determines the minimum and maximum possible user input respectively -->
   
-    <input type="text" name="Name" placeholder="Enter your name" required> <br> <!-- text input field -->
-    <input type="number" name="Age" placeholder="Enter your age" min="1" max="100"> <br> <!-- Numbers input field -->
+    <input type="text" name="Name" placeholder="Enter your name" required maxlength="50" autofocus size="50"> <br> <!-- text input field -->
+    <input type="number" name="Age" placeholder="Age" min="1" max="100" > <br> <!-- Numbers input field -->
     <input type="color" name="FavoriteColor"> <br> <!-- Color selection input -->
     <input type="date" name="DateOfBirth"> <br> <!--Date of birth input field -->
     <input type="datetime"> <br>  <!-- Plain text input field for date and time -->
