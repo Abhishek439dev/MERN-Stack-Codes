@@ -9,13 +9,13 @@
 <!-- In this program, we will see the different types of inputs we can create using the input tag. -->
   
   <!-- type determines the input type. 
-  name is the key for the data submitted to server with a pre-defined value or a value entered by user.
-  placeholder attribute is used to hint the user for entering an input
-  required attribute makes it necessary to enter an input in that field.
-  maxlength attribute determines the maximum number of characters that can be entered in the text input field.
-  autofocus attribute is used to focus/highlight on a particular input field having this attribute when the page loads.
-  size attribute determines the width of the input field in terms of number of characters.
-  min and max attributes in number type field determines the minimum and maximum possible user input respectively -->
+  'name' attribute is the key for the data submitted to server with a pre-defined value or a value entered by user.
+  'placeholder' attribute is used to hint the user for entering an input
+  'required' attribute makes it necessary to enter an input in that field.
+  'maxlength' attribute determines the maximum number of characters that can be entered in the text input field.
+  'autofocus' attribute is used to focus/highlight on a particular input field having this attribute when the page loads.
+  'size' attribute determines the width of the input field in terms of number of characters.
+  'min' and 'max' attributes in number type field determines the minimum and maximum possible user input respectively -->
   
     <input type="text" name="Name" placeholder="Enter your name" required maxlength="50" autofocus size="50"> <br> <!-- text input field -->
     <input type="number" name="Age" placeholder="Age" min="1" max="100" > <br> <!-- Numbers input field -->
@@ -25,6 +25,8 @@
     <input type="datetime-local"> <br>  <!-- Date and time input field -->
     <input type="file"> <br>  <!-- File selector input field -->
 
+    <!-- In checkboxes and radio buttons we have to provide name and value attributes because when they are selected, the data needs to be send to server so there 
+    should be a value associated with each checkbox or radio button.  -->
     <!-- checkbox type input -->
     <input type="checkbox" name="hobbies" value="Reading"> Reading <br>
     <input type="checkbox" name="hobbies" value="Traveling"> Traveling <br>
@@ -38,6 +40,9 @@
     <input type="radio" name="Adult" value="Yes"> Yes <br>
     <input type="radio" name="Adult" value="No"> No <br>
 
+    <!-- In dropdown menu we define the name in the select tag and the value attributes is defined for each of the option of menu.
+    The 'selected' attribute pre-selects the option from menu when the page loads, which can be changed by the user and the 'disabled' attribute greys out the 
+    option such that it can't be selected by the user.  -->
     <!-- Dropdown menu type input -->
     <select name="state">
         <option selected disabled>Select State</option>
@@ -50,7 +55,8 @@
     </select>
     <br>
 
-    <!-- textarea type input -->
+    <!-- textarea type input : It is used to create an input area for larger textual inputs like comments, reviews, feedbacks etc. The 'rows' and 'cols' 
+    attribute defines an initial default size of the text-area but the text area is resizable which can be disabled via CSS resize property.-->
     <textarea name="comment" placeholder="Enter your comment" rows="5" cols="20"></textarea>
     <br>
 
