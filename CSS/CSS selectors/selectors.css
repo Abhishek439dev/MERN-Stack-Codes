@@ -1,0 +1,48 @@
+/* element selector */
+
+body {
+    background-color: lightblue;
+}
+
+p{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* class selector */
+
+.portion {
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* ID selector */
+#main-heading {
+    color: darkblue;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Attribute selector */
+input[type="text"], input[type="email"] {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+label[for="firstname"], label[for="email"] {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
