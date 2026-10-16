@@ -1,0 +1,15 @@
+CSS stands for Cascading Style Sheets. The term Cascading refers to the algorithm or set of rules which are used by browser to decide the flow of styling down 
+the HTML elements when styling from multiple sources is being applied on them. 
+The styling applied on an element is decided on the basis of three rueles,
+
+> Source of styling and importance: The user applied styling overrides the browser's built-in styling for elements and the stylings marked with !important will 
+override all the other user's defined styling as well. This ignores all the prescedence order of selectors, source or order and force to apply the styling.
+Ex: h2{
+    color: red !important;
+    }
+
+> Specificity: If the styling is coming from the same source(like user defined CSS), then the precedence is determined by the selecters type. Different selectors 
+target the elements more or less specifically and the order is element selectors < class selectors < id selectors. 
+
+> Styling order: If two styling have same origins and specificity, then the order in which they are written determines the final styling. The styling written last
+in the code overrides the styling written before. 
