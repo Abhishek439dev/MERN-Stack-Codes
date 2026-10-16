@@ -9,7 +9,9 @@ Ex: h2{
     }
 
 > Specificity: If the styling is coming from the same source(like user defined CSS), then the precedence is determined by the selecters type. Different selectors 
-target the elements more or less specifically and the order is element selectors < class selectors < id selectors. 
+target the elements more or less specifically.
+Specificity order:
+!important keyword > inline CSS > ID selectors > Class selectors > Elements selectors > Universal selector. 
 
 > Styling order: If two styling have same origins and specificity, then the order in which they are written determines the final styling. The styling written last
-in the code overrides the styling written before. 
+in the code overrides the styling written before for the same element. 
