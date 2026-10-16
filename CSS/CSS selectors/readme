@@ -1,0 +1,24 @@
+CSS Selectors:
+CSS Selectors are the different patterns or methods which are used to target and style specific HTML elements within a web page. 
+These are of 4 types.
+
+i) Element selectors: the html element which needs to be styled is used, followed by the curly braces having the CSS properties. It targets a number of same HTML
+elements together.
+Ex: To target all the h2 headings together and style them with same CSS properties.
+    h2{
+      color: blue;
+      font-size: larger;
+    }
+
+ii) Class selector: it is used to group a number of same or differnet HTML elements. All such elements are given a same class attribute name and all of them can be
+target and styled in one go. The (.) dot followed by the class name is used to provide CSS. 
+  .divClass{
+    margin:10px;
+    padding:20px;
+    
+iii) id selector: it is used to target a single HTML element as ID is used to uniquely identify a HTML element. '#' followed by the id name is used to target and
+style such an element.
+    #mainHeading{
+      font-size: 30px;
+      font-family: sans-serif;
+    }
