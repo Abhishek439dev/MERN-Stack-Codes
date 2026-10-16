@@ -1,0 +1,29 @@
+There are three types of CSS
+i) inline CSS: This css is written in the HTMl document under a specific HTML element to which the CSS applies. Under the html opening tag CSS can be written using
+the style attribute. 
+<h1 style="font-size=20px; color=blue;"> Hello World </h1>
+
+ii) internal CSS: This type of CSS is written within the HTML document under the <head> and </head> tags using the <style> tag. 
+<head>
+  <style>
+    h2{
+      font-size: large;
+      color: blue;
+    }
+  </style>
+</head>
+
+iii) external CSS: This type of CSS is written in a separate css file, then this file is linked to the HTMl file using <link> tag. 
+styles.css
+   h2{
+      font-size: large;
+      color: blue;
+    }
+
+Specificity: inline CSS is carry more prescedence while the internal and external carry same. 
+
+Which CSS should be used?
+External CSS should be used more commonly because,
+> Inline CSS and Internal CSS makes the HTML code look complex reducing the readability and maintainability. 
+> Extenral CSS separated the different files on the basic of their purposes and helps in achieving separation of concerns. It keeps the HTML file separated for
+  defining the structure and CSS file for styling of the web pages.
