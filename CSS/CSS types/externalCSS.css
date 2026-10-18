@@ -1,3 +1,4 @@
+/* We have added a background colour to the html document by using an element selector. */
 body{
     background-color: lightblue;
 }
