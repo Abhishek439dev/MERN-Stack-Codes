@@ -1,5 +1,4 @@
 /* element selector */
-
 body {
     background-color: lightblue;
 }
@@ -14,12 +13,12 @@ p{
 
 
 /* class selector */
-
 .portion {
     background-color: lightgreen;
     padding: 10px;
     margin: 10px;
 }
+
 
 /* ID selector */
 #main-heading {
@@ -30,7 +29,21 @@ p{
     margin: 10px;
 }
 
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+
 /* Attribute selector */
+/* i) Selecting html elements by specifying their attributes. Syntax: HTML_tag[attribute] */
+a[title]{
+    color: rgb(6, 115, 239);
+    text-decoration: underline;
+}
+
+/* ii) '=' this is used in attribute selector to select elements by matching an exact attribute value. Syntax: HTML_tag[attribute="value"] */
 input[type="text"], input[type="email"] {
     border: 2px solid #ccc;
     padding: 10px;
@@ -42,7 +55,38 @@ label[for="firstname"], label[for="email"] {
     margin-right: 10px;
 }
 
-/* Universal selector */
-* {
-    box-sizing: border-box;
+a[href="https://www.example.com/"]{
+    color: rgb(243, 14, 208);
+    text-decoration: wavy underline;
+}
+
+/* iii) '*=' is used in attribute selector which selects the elements if their attribute value contains the specified word. Syntax: HTML_tag[attribute *= "matching_word"] */
+a[href *= "India"]{
+    color: rgb(236, 133, 7);
+    text-decoration: double underline;
+}
+
+/* iv) '^=' is used in attribute selector which selects the elements if their attribute value starts with the specified word. Syntax: HTML_tag[attribute ^= "starting_word"] */
+a[class ^= "USA"]{
+    color: rgb(218, 3, 3);
+    text-decoration: dashed underline;
+}
+
+/* v) '$=' is used in attribute selector which selects the elements if their attribute value ends with the specified word. Syntax: HTML_tag[attribute *= "ending_word"] */
+a[href $= "AWS.com"]{
+    color: rgb(84, 50, 4);
+    text-decoration: dotted underline;
+}
+
+/* vi) '~=' is used in attribute selector which selects the elements if their attribute value contains the specified word separately. Syntax: HTML_tag[attribute ~= "word"] */
+a[class ~= "Sunder"]{
+    color: rgb(242, 219, 10);
+    text-decoration: line-through underline;
+}
+
+
+/* Grouping selector */
+h1, p, .links {
+    background-color: rgb(46, 170, 116);
+    display: inline-block;
 }
