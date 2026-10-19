@@ -1,0 +1,8 @@
+In CSS the combinators are the special symbols which are used to combine multiple CSS selectors which in turn target the html elements. 
+CSS combinators helps simplifying the styling by allowing to style a number of elements together. 
+
+These combinators are of different types like.
+i) Descendent combinator
+ii) Child combinator
+iii) General sibling combinator
+iv) Adjacent sibling combinator
