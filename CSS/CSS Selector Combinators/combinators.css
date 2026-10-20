@@ -1,4 +1,4 @@
-/* Descendent combinator */
+/* Descendent combinator: The parent selector is followed by the child selector with a space. All the descendents of the parent element are styled using this. */
 .navbar span{
     color: rgb(23, 139, 222);
     padding: 5px;
@@ -7,7 +7,7 @@
     
 }
 
-/* Child combinator */
+/* Child combinator: This selects all the immediate childs of the parent element. It does not select the deeply indented grand-child elements. */
 #DropMenu > option{
     color: rgb(253, 253, 253);
     background-color: rgb(23, 139, 222);
@@ -15,7 +15,8 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* General sibling combinator */
+/* General sibling combinator: For this both the elements should be the child of a common parent. In the example below, the selector will select all the section
+elements after its 'intro' sibling. The section elements may or may not be present immediately after 'into' sibling.*/
 #intro ~ section{
     background-color: rgb(126, 222, 23);
     padding: 10px;
@@ -23,7 +24,8 @@
     margin: 10px;
 }
 
-/* Adjacent sibling combinator */
+/* Adjacent sibling combinator: The two elements should be siblings or child of a common parent. Here the selector selects the immediate sibling after the 
+specified sibling. In this example, it will select the first 'p' element after its sibling 'intro' */
 #intro + p {
     font-size: 20px;
     color: rgb(1, 87, 19);
