@@ -1,0 +1,5 @@
+Pseudo Classes: The Pseudo classes allow us to select the HTML elements based on their state like hover, visited etc. These states are not exact HTML elements, they
+represent the current activity related to that element. The colon symbol (:) is used to select an HTML element based on its state.
+
+Pseudo Elements: These are the elements which are not present in the HTML tree. They are created using CSS. It allow us to create HTML content without writing HTML.
+The pseudo elements can be created using double column (::).
