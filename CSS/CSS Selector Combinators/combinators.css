@@ -1,0 +1,30 @@
+/* Descendent combinator */
+.navbar span{
+    color: rgb(23, 139, 222);
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    
+}
+
+/* Child combinator */
+#DropMenu > option{
+    color: rgb(253, 253, 253);
+    background-color: rgb(23, 139, 222);
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* General sibling combinator */
+#intro ~ section{
+    background-color: rgb(126, 222, 23);
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Adjacent sibling combinator */
+#intro + p {
+    font-size: 20px;
+    color: rgb(1, 87, 19);
+}
