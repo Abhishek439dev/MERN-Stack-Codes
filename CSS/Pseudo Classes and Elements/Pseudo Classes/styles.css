@@ -1,31 +1,32 @@
+/* This will select the anchor tag when it the link is clicked to open and visit it. */
 a:visited{
     color:brown;
     text-decoration: none;
 }
-
+/* This will select the anchor tag when the user hovers over the link. */
 a:hover{
     text-decoration: wavy underline;
     color: rgb(26, 255, 0);
 }
-
+/* This will select the first-child of the unordered list. The space between the tag(ul) and colon(:) is necessary.*/
 ul :first-child{
     background-color: aqua;
     font-weight: bold;
     padding: 5px;
 }
-
+/* This will select the last-child of the unordered list. */
 ul :last-child{
     background-color: rgb(14, 214, 38);
     font-weight: bold;
     padding: 5px;
 }
-
+/* This will select all the even numbered childs of the unordered list. Similarly we can use odd as argument to select all odd childs. */
 ul :nth-child(even){
      background-color: rgb(107, 14, 214);
     font-weight: bold;
     padding: 5px;
 }
-
+/* giving some styles to the table */
 h3{
     margin-left: 150px;
     color:chocolate;
@@ -39,6 +40,9 @@ h3{
     border-spacing: 1px;
 }
 
+/* Using the nth-child class with equation. Here the value of n starts from zero and increases. */
+/* We have applied this on tbody, so this will select the table rows(tr) and table data(td) as well, resulting in a specific pattern. */
+/* If the value of the equation (-n+2) becomes negative or zero, then it does not select any row or table data. We can modify this equation as per the need. */
 tbody :nth-child(-n+2){
     background-color: yellow;
 }
