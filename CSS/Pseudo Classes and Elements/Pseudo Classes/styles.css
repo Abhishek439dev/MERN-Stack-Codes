@@ -1,0 +1,44 @@
+a:visited{
+    color:brown;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: wavy underline;
+    color: rgb(26, 255, 0);
+}
+
+ul :first-child{
+    background-color: aqua;
+    font-weight: bold;
+    padding: 5px;
+}
+
+ul :last-child{
+    background-color: rgb(14, 214, 38);
+    font-weight: bold;
+    padding: 5px;
+}
+
+ul :nth-child(even){
+     background-color: rgb(107, 14, 214);
+    font-weight: bold;
+    padding: 5px;
+}
+
+h3{
+    margin-left: 150px;
+    color:chocolate;
+}
+#cadets_data, th, td{
+    border: solid rgb(15, 14, 14) 2px;
+    padding: 5px;
+    margin: 5px;
+}
+#cadets_data{
+    border-spacing: 1px;
+}
+
+tbody :nth-child(-n+2){
+    background-color: yellow;
+}
