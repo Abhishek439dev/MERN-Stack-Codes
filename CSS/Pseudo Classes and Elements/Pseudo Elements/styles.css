@@ -1,0 +1,21 @@
+/* This will add a pseudo element before the paragraph(p). The element consist of the specified content and styling. */
+p::before{
+    content: "This content is added via Pseudo Elements CSS.";
+    color:rgb(19, 62, 216);
+    font-weight: bold;
+}
+/* This will add a pseudo element after the paragraph(p).*/
+p::after{
+    content: "This content is also added via Pseudo Elements CSS.";
+    color:rgb(253, 20, 144);
+    font-weight: bold;
+}
+/* This will select the actual first-line of the paragraph and style it. */
+p::first-line{
+    color: crimson;
+    font-style: italic;
+}
+/* This will select the first letter of the paragraph be it pseudo-element. */
+p::first-letter{
+    color:rgb(57, 247, 9);
+}
