@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content_box_div">
+        This is the div with box-styling set to content-box.
+    </div>
+
+    <p>The content of this div occupies all the width which is set to this div. The properties like border, padding occupy extra pixels as specified and do not adjust into the specified width of 200px. <br> 
+        This result in increase of the overall width of the div (border + padding + content + padding + border). </p>
+
+     <div id="border_box_div">
+        This is the div with box-styling set to border-box.
+    </div>
+
+    <p>The content of this div does not occupies all the width which is set to this div. The width of properties like border, padding adjust into the specified width of 200px. <br> 
+        The width of the div remains 200px because the content-width has adjusted with width of padding and border. </p>
+</body>
+</html>

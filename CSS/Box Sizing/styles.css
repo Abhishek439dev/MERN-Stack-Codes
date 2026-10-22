@@ -1,0 +1,16 @@
+#content_box_div{
+    background-color: aquamarine;
+    border: solid blue 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    box-sizing: content-box;
+}
+
+#border_box_div{
+    background-color: aquamarine;
+    border: solid blue 5px;
+    padding: 5px;
+    width: 200px;
+    box-sizing: border-box;
+}
