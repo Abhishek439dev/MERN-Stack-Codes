@@ -1,3 +1,5 @@
+/*The width of 200px will be taken by the content and the padding and border will contribute extra 
+in the final dimensions of the element.*/
 #content_box_div{
     background-color: aquamarine;
     border: solid blue 5px;
@@ -7,6 +9,7 @@
     box-sizing: content-box;
 }
 
+/*The width of 200px will be distributed among the content, padding and border. The final dimension will remain 200px*/
 #border_box_div{
     background-color: aquamarine;
     border: solid blue 5px;
