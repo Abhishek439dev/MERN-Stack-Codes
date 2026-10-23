@@ -5,7 +5,7 @@ in the final dimensions of the element.*/
     border: solid blue 5px;
     padding: 5px;
     margin-bottom: 10px;
-    width: 200px;
+    width: 200px; /*final width = 5px border + 5px padding + 200px content + 5px padding + 5 px border = 220px*/
     box-sizing: content-box;
 }
 
@@ -14,6 +14,6 @@ in the final dimensions of the element.*/
     background-color: aquamarine;
     border: solid blue 5px;
     padding: 5px;
-    width: 200px;
+    width: 200px; /*final width = 200px including the border and padding.*/
     box-sizing: border-box;
 }
