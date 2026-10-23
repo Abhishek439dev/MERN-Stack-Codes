@@ -1,3 +1,4 @@
+/*This is the old way set Box-Sizing to border-box for all elements.*/
 *{
     box-sizing: border-box;
 }
@@ -9,15 +10,18 @@
     margin-bottom: 10px;
 }
 
+/*we want this div to have content-box Box-Sizing and we have oberriden it here.*/
 #div2{
     box-sizing: content-box;
-    width: 200px;
+    width: 200px; /*This div will have a width equals to border + padding + content width + padding + border*/
     padding: 5px;
     border: solid blue 5px;
-
 }
 
+/*This child div will not have the content-box Box-Sizing and will behave unexpectedly as it is still 
+border-box. We have to override all child elements to have content-box instead of boder-box or use the 
+inherit property.*/
 #div2 > div{
-    width: 150px;
+    width: 150px; /*This div will have a total width of 150px including border and padding.*/
     border: solid red 5px;
 }
