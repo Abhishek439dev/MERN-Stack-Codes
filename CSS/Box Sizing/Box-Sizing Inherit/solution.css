@@ -1,27 +1,32 @@
+/*This will set border-box for all the elements under html tag.*/
 html{
     box-sizing: border-box;
 }
 
+/*This will allow all the elements and pseudo elements before or after those elements to inherit the same 
+Box-Sizing as their parent.*/
 *, *::before, *::after{
     box-sizing: inherit;
 }
 
+/*This div has border-box Box-Sizing.*/
 #div1{
     width: 200px;
-    border: solid blue 5px;
+    border: solid blue 5px; /*Here the total width of the element will be 200px only including border and padding.*/
     padding: 5px;
     margin-bottom: 10px;
 }
 
+/*We want to change the Box-Sizing to content-box for this div so we have overridden it here.*/
 #div2{
     box-sizing: content-box;
-    width: 200px;
+    width: 200px; /*Here the total width will be 5+5+200+5+5 = 220px*/
     padding: 5px;
     border: solid blue 5px;
-
 }
 
+/*This div will also inheit the content-box Box-Sizing.*/
 #div2 > div{
-    width: 150px;
+    width: 150px; /*The total width of this div will be 5 + 150 + 5 = 160px*/
     border: solid red 5px;
 }
