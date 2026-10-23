@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+#div1{
+    width: 200px;
+    border: solid blue 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#div2{
+    box-sizing: content-box;
+    width: 200px;
+    padding: 5px;
+    border: solid blue 5px;
+
+}
+
+#div2 > div{
+    width: 150px;
+    border: solid red 5px;
+}

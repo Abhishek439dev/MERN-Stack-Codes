@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing problem</title>
+    <link rel="stylesheet" href="problem.css">
+</head>
+<body>
+    <!-- If we want all our divs to have box-sizing defined as border-box. We can do that using universal selector(old way). -->
+    <div id="div1">
+        This div has box-sizing defined as border-box.
+    </div>
+
+     <div id="div2">  <!-- If we want Box-sizing is defined as content-box for this div.  -->
+        <div>         <!-- We expect the same box-sizing for this div, but no this will stay as border box beacuse of universal selector.  -->
+             This div is expected to have content-box box-sizing but it is border box.
+        </div>
+    </div>
+</body>
+</html>
