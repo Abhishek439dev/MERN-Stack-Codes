@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing solution</title>
+    <link rel="stylesheet" href="solution.css">
+</head>
+<body>
+    <!-- If we want all our divs to have box-sizing defined as border-box. We can do that using box-sizing on html tag. -->
+    <div id="div1">
+        This div has box-sizing defined as boder-box.
+    </div>
+
+     <div id="div2">  <!-- If we want Box-sizing is defined as content-box for this div. We can override it for this div.  -->
+        <div>         <!-- This div will inherit the same box-sizing as defined on its parent.  -->
+             This div will have the same box-sizing property as its parent div.
+        </div>
+    </div>
+</body>
+</html>
