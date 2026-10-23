@@ -1,0 +1,44 @@
+Box-Sizing : Border-box is preferred over the content-box because it provides more predictable and responsive layout. 
+To set all the elements Box-Sizing to border-box, we can use the universal selector (*). It is the old and easy way to set
+Box-Sizing to border-box for all elements. 
+*{
+  Box-Sizing: border-box;
+}
+
+The problem with this method is in the way in which the universal selector works. It selects all the elements amd applies the 
+CSS to them unless they are explicitly overriden witb some other CSS later. 
+
+Suppose, if we have a container or element which we want to style in content-box for a project's need. 
+Ex- HTML 
+<div id="container">
+   <div id="child">
+      This is child element.
+   </div>
+</div>
+
+CSS
+#container {
+   Box-Sizing: content-box;
+    }
+We may expect the child element of this container to have the same styling as content-box, but the problem is the universal selector 
+has already set its Box-Sizing to border-box and it will remain the same until we change it.
+
+
+THE SOLUTION TO THIS IS Box-Sizing: inherit;
+
+html{
+ Box-Sizing: border-box;
+}
+
+*, *::before, *::after {
+     Box-Sizing: inherit;
+}
+
+Using these lines of code in our CSS files at first sets all the HTML elements to border-box. 
+Now the second half of this code block implies that all the elements who have a change in their 
+Box-Sizing will inherit the same Box-Sizing to its child elements.
+
+So, if there's a requirement to set the Box-Sizing of an element to content-box, then its child elements will automatically inherit 
+the same Box-Sizing property of content box, so we don't have to manually do it again for each child element. 
+This prevents the unintentional or unexpected styling behaviour. 
+
