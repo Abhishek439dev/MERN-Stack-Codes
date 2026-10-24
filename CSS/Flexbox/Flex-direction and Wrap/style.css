@@ -11,9 +11,9 @@ html{
     /* flex-direction: row;
     flex-wrap: nowrap; */
     flex-flow: row nowrap;
-
 }
 
+/*Slecting the child elements with descendant selector.*/
 #parent div{
     border: solid blue 5px;
     background-color: bisque;
