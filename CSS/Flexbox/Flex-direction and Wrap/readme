@@ -1,0 +1,11 @@
+flex-direction is a flexbox property which is used to define the direction in which we want to arrange the items.
+It can be row (horizontal) or column (vertical). 
+The direction defined by flex-direction becomes the main axis of flex-container(container on which flexbox is applied). 
+The direction perpendicular to the main axis becomes the Cross-axis of the flex-container.
+
+The flex-wrap property of flexbox makes the items move to the next line if the space in the current line is less. 
+This makes the layout responsive as it adjusts upon the change in screen size. 
+By default this property is set to 'nowrap', means that items won't wrap to next line upon decreased screen space.
+
+Both these properties can be combined in a single on which is called as flex-flow. Using this property we can set both 
+flex-direction and flex-wrap in one go.
