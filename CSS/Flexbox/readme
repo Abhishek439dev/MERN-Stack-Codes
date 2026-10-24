@@ -1,4 +1,12 @@
 Flexbox is a powerful layout model for arranging items (horizontally or vertically) within a container, in a flexible and responsive way.
 It is very helpful in arranging the elements perfectly and seamlessly. 
+It has a number of properties to align the items in different ways horizontally or vertically.
+
 Without flexbox we have to use CSS properties like margin, padding etc. which is difficult to precisely 
 align items on the screen.
+
+To enable flexbox styling on a container element we need to select it via CSS selectors and set display property to flex. 
+For example: 
+#parenr_container {
+display:flex;
+}
