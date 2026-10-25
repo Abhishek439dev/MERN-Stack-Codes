@@ -12,8 +12,7 @@ html{
     flex-wrap: nowrap; */
     flex-flow: row nowrap;
     height: 500px;
-    justify-content: space-evenly;
-
+    justify-content: space-evenly; /*This property of justify-content will separate all the items with equal space between them.*/
 }
 
 #parent div{
