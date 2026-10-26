@@ -10,11 +10,11 @@ html{
     display: flex;
     /* flex-direction: row;
     flex-wrap: nowrap; */
-    flex-flow: row nowrap;
+    flex-flow: row nowrap;         /*flex-direction set to row means that the main axis is horizontal. */
     height: 500px;
-    justify-content: space-evenly;
-    align-items: center;
-
+    
+    justify-content: space-evenly; /*  justify-content will align the items along the main-axis (horizontally here). */
+    align-items: center;           /* This will move the items whole row in the center of the container.*/
 }
 
 #parent div{
