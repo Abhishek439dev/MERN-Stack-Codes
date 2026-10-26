@@ -1,0 +1,8 @@
+Align-items is the flexbox property which allows us to align the items in a flexbox container on its cross-axis (the axis perpendicular to the main-axis). 
+The common values of this property are,
+
+• stretch: Stretches items to fill the container along the cross axis (default).
+• center: Centers items in the middle of the cross axis.
+• flex-start / start: Aligns items to the start edge of the cross axis (e.g., top in a standard row).
+• flex-end / end: Aligns items to the end edge of the cross axis (e.g., bottom in a standard row).
+• baseline: Aligns items so that their text baselines sit on the same line.
