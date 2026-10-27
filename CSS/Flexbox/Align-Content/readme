@@ -1,0 +1,3 @@
+Align-content property of flexbox is used to arrange multiple rows of the items within the flexbox container along the cross-axis. 
+For this the flex-wrap property should be set to 'wrap' because then only the items will move to the next line.
+The Align-content has no effect on single-line flexbox containers.
