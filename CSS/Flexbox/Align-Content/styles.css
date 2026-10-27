@@ -1,0 +1,26 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+#parent{
+    border: solid red 10px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    flex-flow: row wrap;
+    height: 500px;
+    justify-content: flex-start;
+    align-content: space-between;
+
+}
+
+#parent div{
+    border: solid blue 5px;
+    background-color: bisque;
+    padding: 20px;
+    min-width: 200px;
+    height: 100px;
+}
