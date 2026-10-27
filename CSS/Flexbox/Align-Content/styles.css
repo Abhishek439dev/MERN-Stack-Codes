@@ -12,8 +12,8 @@ html{
     flex-wrap: nowrap; */
     flex-flow: row wrap;
     height: 500px;
-    justify-content: flex-start;
-    align-content: space-between;
+    justify-content: flex-start;  /*This will arrange the items across the main-axis.*/
+    align-content: space-between; /*This is going to arrange multi-row items across cross-axis. */
 
 }
 
