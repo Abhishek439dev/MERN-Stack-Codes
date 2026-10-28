@@ -1,4 +1,0 @@
-Flex-Basis is a CSS flexbox property which is used to explicitly set the initial size of an item. The size of an item can be set in the form of absolute lengths like 
-200px or 12rem or we can use the percentage to set the length and the item will take that much space of the container.
-
-It controls the width of an item when the flex-direction is set to 'row' and height when the flex-drection is set to 'column'.
