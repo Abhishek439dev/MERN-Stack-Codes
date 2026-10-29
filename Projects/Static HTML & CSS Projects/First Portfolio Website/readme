@@ -1,0 +1,17 @@
+This is a static portfolio website created using HTML and CSS only.
+It has a nav bar, links, images etc.
+I have used sementic html tags wherever necessary for better readability of code.
+I have created progress bars using divs, and flexbox properties.
+
+Skills covered in this project:
+i) HTML
+> Use of Sementic tags.
+> creating nav bar.
+> adding images.
+> adding SVGs and unicodes.
+
+ii) CSS
+> Using color pallates.
+> Using color gradients.
+> Using Google fonts.
+> Using flexbox.
