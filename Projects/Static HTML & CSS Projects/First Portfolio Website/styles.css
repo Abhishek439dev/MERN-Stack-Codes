@@ -1,6 +1,8 @@
+/* imorting google fonts. Bubblegum and Namriti */
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* Box sizing set to border box and inherit. */
 html{
     box-sizing: border-box;
 }
@@ -9,6 +11,7 @@ html{
     box-sizing: inherit;
 }
 
+/* Use of variables to carry the hexcodes of colors helping us to remember and set colors easily. */
 :root{
     --dark_blue: #086288;
     --blue : #4D8DBA;
@@ -16,17 +19,20 @@ html{
     --beige: #FFEFC4;
 }
 
+/* Every element is set to have zero margins so that we can position them easily otherwise it becomes difficult when they have margins of their own. */
 body{
     margin: 0%;
     background-color: var(--sky_blue);
 }
 
+/* nav items set apart using display flex and space=between. A different bg color is also set. */
 nav{
     display: flex;
     justify-content: space-between;
     background-color: var(--dark_blue);
 }
 
+/* Styling the name. */
 #name{
     margin-left: 2rem;
     margin-right: 1rem;
@@ -35,6 +41,7 @@ nav{
     color: var(--beige);
 }
 
+/* Positioning the links of nav bar. */
 #links{
     margin-right: 2rem;
     margin-top: 2.5rem;
@@ -42,6 +49,7 @@ nav{
     gap: 20px;
 }
 
+/* Styling the links of nav bar by selecting them usind descendent selector. */
 #links a{
     text-decoration-line: none;
     font-family: niramit;
@@ -52,10 +60,12 @@ nav{
     margin-bottom: 10px;
 }
 
+/* Adding an underline effect upon hovering over the nav links.  */
 #links a:hover{
     text-decoration: underline;
 }
 
+/* Styling the last button of nav bar (Resume) by selecting it using pseudo class ':last-child'. Added a Gradient to this link. */
 #links :last-child{
     background: #0e4ae3;
     background: linear-gradient(45deg, rgba(14, 74, 227, 1) 17%, rgba(39, 230, 207, 1) 49%, rgba(0, 255, 153, 1) 92%);    
@@ -64,6 +74,7 @@ nav{
     margin-top: 0%;
 }
 
+/* All the sections of the page are set to have margins and font style by selecting them all in one go using their common class. */
 .sections{
     margin: 2rem 2rem;
     font-family: niramit;
@@ -89,6 +100,7 @@ nav{
     color: var(--dark_blue);
 }
 
+/* Adding a horizontal rule with gradient. */
 .separator{
     height: 2px;
     background: #00D4FF;
@@ -171,6 +183,7 @@ ul .jobs{
     color: white;
 }
 
+/* Setting flex-basis to define the progress of skills. */
 #java_skill{
     flex-basis: 35%;
 }
@@ -185,7 +198,7 @@ ul .jobs{
 }
 
 
-
+/* Adding media queries to make the page responsive and compatible on different screen sizes. */
 @media (max-width: 600px){
 
     #details{
@@ -193,12 +206,14 @@ ul .jobs{
     }
 }
 
+/* Moving the experience section to portrait mode (column) on smalller screen size(480px and below). */
 @media (max-width: 480px){
     #details{
     flex-direction: column;
     }
 }
 
+/* Nav bar wraps to two lines so that all the links can arrange in portrait mode. */
 @media (max-width: 440px){
 
     nav{
@@ -221,6 +236,7 @@ ul .jobs{
     
 }
 
+/* Progress bars of all skills are set to have smaller sizes in portrait mode, so that it can properly accomodate in smaller screens. */
 @media (max-width: 520px){
     #skills h4 {
     margin-left: 1rem;
