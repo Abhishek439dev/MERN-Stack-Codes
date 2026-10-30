@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
+    <!-- header section including the navigation bar. -->
     <header>
         <nav>
             <h2 id="name">Abhishek Saxena</h2>
@@ -19,6 +19,7 @@
         </nav>
     </header>
 
+    <!-- introductory section involving some highlights and summary. -->
     <section id="intro" class="sections">
         <h2>Hi there!</h2>
         <p>My name is <br>
@@ -30,7 +31,7 @@
             <span>MERN Stack |</span>
             <span>Tech Enthusiast</span>
         </div>
-
+    
         <main>
             <p>
                 I'm a Software Developer having expertise in MERN stack. I love creating beautiful and highly responsive websites. I'm also learning DSA in Java.<br>
@@ -39,8 +40,10 @@
         </main>
     </section>
 
+    <!-- This div is used to add a gradient horizontal rule. -->
     <div class="separator"></div>
 
+    <!-- education section -->
     <section id="qualification" class="sections">
         <h2>Education</h2>
         <div class="university">
@@ -56,8 +59,10 @@
         <p class="university_name">Kumaun University, Nainital | <i>78%</i></p>
     </section>
 
+    <!-- another horizontal rule  -->
     <div class="separator"></div>
 
+    <!-- experience section having an image as well. -->
     <section id="experience" class="sections">
         <h2>Experience</h2>
         <div id="details">
@@ -70,15 +75,17 @@
         </div>
     </section>
 
+    <!-- gradient horizontal rule. -->
     <div class="separator"></div>
 
+    <!-- skills section with progress bars for each skill. -->
     <section id="skills" class="sections">
         <h2>Skills</h2>
         <p>I'm learning and continously improving my skills in a number of languages and tools. </p>
         
         <h4>Java: </h4>
-        <div class="skill-items">
-            <div class="progress-bar" id="java_skill">35%</div>
+        <div class="skill-items"> <!--parent div: applied with display flex.-->
+            <div class="progress-bar" id="java_skill">35%</div>  <!--child div: resized using flex-basis-->
         </div>
 
         <h4>JavaScript: </h4>
@@ -97,7 +104,8 @@
         </div>
     </section>
 
-     <section id="hire" class="sections">
+    <!-- Hire me section with some SVGs which are hyperlinks to different platforms for contacting. -->
+    <section id="hire" class="sections">
         <h2>Hire me!</h2>
         <p>
             I'm always ready to get my hands dirty in learning new things, improving my skills and creating awesome projects. If you like my work, you can contact me
@@ -111,6 +119,7 @@
         </div>
     </section>
 
+    <!-- footer section with some unicodes. -->
     <footer>
         <small>
         &copy 2026 Abhishek Saxena. All Rights Reserved.
