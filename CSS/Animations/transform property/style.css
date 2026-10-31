@@ -1,0 +1,45 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: content-box;
+}
+
+.parent{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.child{
+    height: 5em;
+    width: 5rem;
+    font-weight: bold;
+    border: 2px solid black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.child1{
+    background-color: aqua;
+    transform: translate(2rem, 3rem) rotate(45deg) scaleX(2);
+}
+
+.child2{
+    background-color: blueviolet;
+    transform: rotate(90deg) translateX(20rem) skew(20deg, 30deg);
+}
+
+.child3{
+    background-color: rgb(144, 212, 8);
+}
+
+.child:hover{
+    transform: scale(2, 2) rotate(45deg);
+}
