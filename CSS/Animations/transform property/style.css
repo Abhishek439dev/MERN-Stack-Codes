@@ -25,7 +25,7 @@ html{
     align-items: center;
 }
 
-
+/* child1 and child2 have some effects pre-applied on them using transform properties, which have changed their normal position and shape. */
 .child1{
     background-color: aqua;
     transform: translate(2rem, 3rem) rotate(45deg) scaleX(2);
@@ -36,10 +36,12 @@ html{
     transform: rotate(90deg) translateX(20rem) skew(20deg, 30deg);
 }
 
+/* This is another div we have created which is present in normal shape and position until it is hovered. */
 .child3{
     background-color: rgb(144, 212, 8);
 }
 
+/* The animations specified here will apply on all the child divs upon hovering over them. */
 .child:hover{
     transform: scale(2, 2) rotate(45deg);
 }
