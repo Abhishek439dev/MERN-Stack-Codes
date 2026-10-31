@@ -1,0 +1,3 @@
+CSS provides a number of functionalities to create animations. Using this we can move objects, rotate and skew them.
+We can define the transitions between states of the animations. 
+We can create beautiful loaders using CSS which are less resource consuming as well.
