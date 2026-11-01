@@ -1,10 +1,11 @@
+/* Aligning the div to the center of the page. */
 .parent{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
 }
-
+/* Styling the div for its default state (when its not hovered). */
 .child{
     height: 5rem;
     width: 15rem;
@@ -19,6 +20,8 @@
     color:azure;
 }
 
+/* These are the set of properties we are applying on the child div which will work when we hover over it. transition properties are generally associated with
+pseudo-classes like :hover (effect applies upon hovering) or :active (effect applies when an element is clicked like making a button shrink) etc.*/
 .child:hover {
     transform: rotate(45deg);
     background-color: rgb(247, 251, 4);
@@ -26,6 +29,7 @@
     border: 2px solid red;
     color:rgb(138, 41, 6);
     /* 
+    All these properties can be set using a single transition property.
     transition-delay: 500ms;
     transition-duration: 4s;
     transition-property: all;
