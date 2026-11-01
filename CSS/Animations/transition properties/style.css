@@ -1,0 +1,35 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.child{
+    height: 5rem;
+    width: 15rem;
+    background-color: blue;
+    border: 2px solid black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    color:azure;
+}
+
+.child:hover {
+    transform: rotate(45deg);
+    background-color: rgb(247, 251, 4);
+    width: 5rem;
+    border: 2px solid red;
+    color:rgb(138, 41, 6);
+    /* 
+    transition-delay: 500ms;
+    transition-duration: 4s;
+    transition-property: all;
+    transition-timing-function: ease-in-out; 
+    */
+    transition: all 4s 500ms ease-in-out;
+}
