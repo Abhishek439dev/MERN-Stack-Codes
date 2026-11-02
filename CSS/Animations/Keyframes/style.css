@@ -1,3 +1,4 @@
+/*Centering the divs.  */
 .parent{
     display: flex;
     justify-content: center;
@@ -6,6 +7,7 @@
 
 }
 
+/* Styling the childs */
 .child{
     height: 5rem;
     width: 5rem;
@@ -14,7 +16,9 @@
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 
+/* Animating the childs */
 .child1{
+    /* animation property is required to set the custom animation. */
     animation-name: OscillatorX;
     animation-iteration-count: infinite;
     animation-duration: 4s;
@@ -28,26 +32,28 @@
     animation-duration: 4s;
     animation-timing-function: ease-out; 
     */
-    animation: OscillatorY infinite 4s ease-out;
+    animation: OscillatorY infinite 4s ease-out;  /* shorthand animation property */
 }
 
+/* Here we have defined the keyframes for both the child divs, as they are going in different axis we had to define them separately. */
+/* The first custom animation 'OscillatorX' moves the div in X-axis. */
 @keyframes OscillatorX{
     0%{
-        transform: translateX(-500px);
+        transform: translateX(-500px);   /* Startes at negative X-axis. */
     }
     
     50%{
-        transform: translateX(500px);
+        transform: translateX(500px);   /* Moves to the positive Y-axis. */
     }
 
     100%{
-        transform: translateX(-500px);
+        transform: translateX(-500px);  /* Again reaches at negative X-axis. */
     }
 }
-
+/* This custom animation 'OscillatorY' moves the div in Y-axis. */
 @keyframes OscillatorY{
     0%{
-        transform: translateY(-500px);
+        transform: translateY(-500px); 
     }
 
     50%{
