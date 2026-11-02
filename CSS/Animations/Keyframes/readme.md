@@ -1,0 +1,16 @@
+keyframes are used to define the different states of a custom animation. Using keyframes we define a custom animation from starting to end involving different stages.
+We can define how the animation should look at 0% then as it proceeds we can define it at 25% or 50% then finally to 100% depending upon the need.
+For simple animations we can simply define two states which are 'from' and 'to'. These two stages represent the initial and final stages of the animation.
+
+the syntax to define the keyframes of a custom animation is,
+
+@keyframes 'animation_name'{
+from{
+//some CSS to define the initial state.
+}
+
+to{
+//some CSS to define the final state.
+}
+
+instead of from and to we can define percentages of completion of the animation to add more stages.
