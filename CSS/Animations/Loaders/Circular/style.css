@@ -1,0 +1,51 @@
+.parent{
+    display: flex;
+    justify-content: center;
+}
+
+.child1{
+    height: 4rem;
+    width: 4rem;
+    border: 8px dotted rgb(0, 0, 0);
+    border-top: 8px dotted rgba(138, 130, 130, 0);
+    border-radius: 50%;
+
+    animation: rotate 2s infinite ease-out;
+}
+
+.separator{
+    height: 5rem;
+}
+
+.child2{
+    height: 4rem;
+    width: 4rem;
+    border: 8px solid rgb(56, 56, 56);
+    border-top: 8px solid rgb(138, 130, 130);
+    border-radius: 50%;
+
+    animation: rotate 3s infinite ease-out;
+}
+
+.child3{
+    height: 4rem;
+    width: 4rem;
+    border: 8px solid rgb(245, 12, 12);
+    border-top: 8px solid rgb(138, 130, 130);
+    border-radius: 50%;
+
+    animation: rotate 2s infinite linear;
+    animation-direction: alternate;
+}
+
+
+@keyframes rotate {
+
+    from{
+        transform: rotate(0turn);
+    }
+
+    to{
+        transform: rotate(1turn);
+    }
+}
