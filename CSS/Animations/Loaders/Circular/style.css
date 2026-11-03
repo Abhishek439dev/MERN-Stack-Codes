@@ -1,8 +1,10 @@
+/* Centering all the childs by appling flexbox on their parent container. */
 .parent{
     display: flex;
     justify-content: center;
 }
 
+/* Styling the child1 */
 .child1{
     height: 4rem;
     width: 4rem;
@@ -10,9 +12,11 @@
     border-top: 8px dotted rgba(138, 130, 130, 0);
     border-radius: 50%;
 
+/* Adding the animation to this child. */
     animation: rotate 2s infinite ease-out;
 }
 
+/* separating the loaders from each other by a height of 5 rem */
 .separator{
     height: 5rem;
 }
@@ -35,10 +39,10 @@
     border-radius: 50%;
 
     animation: rotate 2s infinite linear;
-    animation-direction: alternate;
+    animation-direction: alternate;   /* This changes the direction of the movement after each cycle.       */
 }
 
-
+/* defining custom animation by creating its initial and final states. */
 @keyframes rotate {
 
     from{
