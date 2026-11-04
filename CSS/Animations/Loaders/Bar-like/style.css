@@ -1,3 +1,4 @@
+/* It the parent container for the whole animation. Styled it to center the animation on the page. */
 #container{
     display: flex;
     flex-direction: column;
@@ -6,6 +7,7 @@
     height: 500px;
 }
 
+/* This is the border of the animation as present in the IDFC bank logo. */
 #border{
     height: 5rem;
     width: 5rem;
@@ -18,11 +20,13 @@
     padding: 8px;
 }
 
+/* Styling all the bars present in the logo or animation using their common class. */
 .child{
     height: 1.3em;
     background-color: rgb(158, 15, 15);
 }
 
+/* Adding their animation to each of the bars of animation */
 .first{
     width: 100%;
     animation: first_bar 1.3s infinite linear;
@@ -39,6 +43,8 @@
     animation-delay: 0.3s;
 }
 
+/* Defining animations for each bar of the logo. As all the three bars are of differnet sizes and they collapse or expand at different time, we have to create 
+three different animations using keyframes. */
 @keyframes first_bar {
 
     0%{
