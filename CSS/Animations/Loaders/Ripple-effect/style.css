@@ -1,0 +1,110 @@
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle1{
+    border: 3px solid rgb(9, 213, 245);
+    animation: ripple 1s linear infinite;
+    z-index: 1;
+
+}
+.circle2{
+    border: 3px solid rgb(252, 7, 11);
+    margin-right: 10px;
+    animation: ripple2 1s linear infinite;
+    animation-delay: 0.5s;
+    z-index: 2;
+    margin-left: 10px;
+}
+
+@keyframes ripple{
+
+    0%{
+        width: 1rem;
+        height: 1rem;
+        border: 3px solid rgb(9, 213, 245);
+        opacity: 1;
+    }
+    20%{
+        width: 2.2rem;
+        height: 2.2rem;
+        border: 3px solid rgb(9, 213, 245);
+        opacity: 0.7;
+    }
+    40%{
+        width: 3rem;
+        height: 3rem;
+        border: 3px solid rgb(9, 213, 245);
+        opacity: 0.5;
+    }
+    60%{
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 3px solid rgb(9, 213, 245);
+        opacity: 0.3;
+    }
+    80%{
+        width: 4rem;
+        height: 4rem;
+        border: 3px solid rgb(9, 213, 245);
+        opacity: 0.2;
+    }
+    100%{
+        width: 4.5rem;
+        height: 4.5rem;
+        border: 3px solid rgb(9, 213, 245);
+        opacity: 0.1;
+    }
+   
+}
+
+@keyframes ripple2 {
+    0%{
+        width: 1rem;
+        height: 1rem;
+        border: 3px solid rgb(252, 7, 11);
+        opacity: 1;
+    }
+    20%{
+        width: 2.2rem;
+        height: 2.2rem;
+        border: 3px solid rgb(252, 7, 11);
+        opacity: 0.7;
+    }
+    40%{
+        width: 3rem;
+        height: 3rem;
+        border: 3px solid rgb(252, 7, 11);
+        opacity: 0.5;
+    }
+    60%{
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 3px solid rgb(252, 7, 11);
+        opacity: 0.3;
+    }
+    80%{
+        width: 4rem;
+        height: 4rem;
+        border: 3px solid rgb(252, 7, 11);
+        opacity: 0.2;
+    }
+    100%{
+        width: 4.5rem;
+        height: 4.5rem;
+        border: 3px solid rgb(252, 7, 11);
+        opacity: 0.1;
+    }
+}
