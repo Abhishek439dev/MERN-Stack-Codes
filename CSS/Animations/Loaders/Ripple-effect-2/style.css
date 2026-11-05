@@ -1,3 +1,4 @@
+/* Container is applied with flex to center all its contents. */
 #container{
     display: flex;
     justify-content: center;
@@ -6,6 +7,7 @@
     width: 100%;
 }
 
+/* This is the outermost circle of the loader. Its the largest in size. ALl the concentic divs are set to display: flex to center the inner divs. */
 .circle_outest{
     width: 7rem;
     height: 7rem;
@@ -55,6 +57,7 @@
     animation: ripple3 1s infinite linear;
 }
 
+/* All the circles have their differnt animation styled as per the need of animation. Total 4 animations have been created each for a circle. */
 @keyframes ripple {
 
     0%{
