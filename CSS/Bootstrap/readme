@@ -1,0 +1,18 @@
+Bootstrap is a CSS framework. It is used to create very effective UI designs easily. 
+It provides pre-built components like buttons, nav-bars, carousels, etc. We can add these components in our projects by adding their pre-written html codes.
+We can use the pre-defined classes provided by Bootstrap, add them to our components so that they will automatically get styled without us writting any CSS.
+
+Befits:
+i) Helps creating complex frontend quickly.
+ii) No need to worry about CSS properties. 
+iii) It is fast an reliable as the CSS is provided via CDN. 
+
+Disadavantages:
+i) Makes the HTML file bloated with classes, which makes the code hard to read.
+ii) Does not follows separation of concerns. HTML file should be used for structure not for styling.
+iii) It could not be used to create custom designs. We have to use the pre-built designs provided by Bootstrap.
+
+How to use?
+i) Go to getbootstrap.com
+ii) copy the CDN link to the head section of html and copy the script link at the bottom of body (before closing tag).
+iii) go to docs section of bootstrap, look for the component required and add its code to your file.
