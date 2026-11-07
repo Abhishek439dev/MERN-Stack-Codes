@@ -9,10 +9,15 @@
 
 </head>
 <body>
+    <!-- this is the outer div which contains the complete UI. It is styled to place all the items in center of screen. -->
     <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100" style="width: 250px;">
         <h2>Calculator</h2>
 
+        <!-- It is an input field which mimics a field which shows the calculations and outputs. the 'dir' attribute defines the direction of content (rtl = right to left)
+        the form-control class styles this input field as per bootstrap. -->
         <input type="text" dir="rtl" class="w-100 my-4 p-2 form-control">
+
+        <!-- Creating multiple rows containing the buttons of calculator. my = margin at y-axis. gx = horizontal gutter space. w =  width. -->
         <div class="row my-2 gx-5 w-100">
             <div class="col">
                 <button type="button" class="btn-solid theme-light">7</button>
