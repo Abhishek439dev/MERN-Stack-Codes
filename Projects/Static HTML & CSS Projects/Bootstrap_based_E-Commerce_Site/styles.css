@@ -1,0 +1,264 @@
+.navbar-brand{
+    padding: 0;
+    margin: 5px 2rem;
+}
+
+.nav-link{
+    color: black;
+}
+
+.cart_btn{
+    border: 2px solid grey;
+}
+
+.separator{
+    height: 3rem;
+    background-color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card > img{
+    padding: 10px;
+}
+
+.card-body span{
+    font-size: larger;
+}
+
+.cards_group{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 0; */
+    margin: 10px;
+}
+
+.cards_group img{
+    margin: 0;
+    padding: 0; 
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    /* margin: 3rem 0; */
+    background-color: rgb(239, 235, 235);
+    padding: 3rem;
+}
+
+.EYN_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom ul{
+    list-style: none;
+     padding: 0;
+}
+
+.bottom a{
+    text-decoration-line: none;
+    color: black;
+}
+
+.section2 img{
+    margin-right: 5px;
+}
+
+.list2{
+    list-style: none;
+}
+
+.bottom form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-size: large;
+}
+
+form input{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 20rem;
+    margin-top: 5px;
+}
+
+@media (max-width: 770px){
+    .container{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+
+@media (max-width: 936px){
+    .bottom{
+        gap: 3rem;
+    }
+
+    form input{
+        padding: 3px;
+        width: 15rem;
+    }
+
+    .EYN_logo img{
+        width: 80px;
+        height: 60px;
+    }
+
+    .EYN_logo h4{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 808px){
+    .bottom{
+        gap: 2.5rem;
+    }
+
+    form input{
+        padding: 3px;
+        width: 12rem;
+    }
+
+    .EYN_logo img{
+        width: 70px;
+        height: 50px;
+    }
+
+    .EYN_logo h4{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 764px){
+    .bottom{
+        gap: 2rem;
+    }
+
+    form label{
+        font-size: 15px;
+        /* font-weight: bold; */
+    }
+
+    form input{
+        padding: 2px;
+        width: 8rem;
+    }
+
+    .EYN_logo img{
+        width: 60px;
+        height: 40px;
+    }
+
+    .EYN_logo h4{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 704px){
+    .bottom{
+        gap: 2rem;
+    }
+
+    form label{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .EYN_logo img{
+        width: 50px;
+        height: 30px;
+    }
+
+    .EYN_logo h4{
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 676px){
+    .bottom{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .EYN_logo{
+        grid-row: 2 / -1;
+        grid-column: 1 / 4;
+        height: 100px;
+    }
+
+    .bottom{
+        gap: 2rem;
+        padding-bottom: 0;
+    }
+
+    form label{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    form input{
+        padding: 4px;
+        width: 10rem;
+    }
+
+    .EYN_logo img{
+        width: 80px;
+        height: 60px;
+    }
+
+    .EYN_logo h4{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .container{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section1{
+        grid-row: 1 / 2;
+        grid-column: 1/2;
+    }
+    .EYN_logo{
+        grid-row: 2 / -1;
+        grid-column: 1 / 2;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .section2{
+        grid-row: 1 / 2;
+        grid-column: 2/3;
+    }
+    .subscribe{
+        grid-row: 2 / 3;
+        grid-column: 2/3;
+        
+    }
+    .subscribe form{
+        height: 100px;
+        justify-content: center;
+    }
+}

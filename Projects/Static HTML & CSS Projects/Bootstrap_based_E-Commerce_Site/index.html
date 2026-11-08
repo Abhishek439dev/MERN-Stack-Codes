@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Assets/EYN Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <!-- Nav bar -->
+        <nav class="navbar md:navbar-expand bg-1">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#home"><img src="Assets/EYN Logo.png" height="40px" width="40px" alt="EYN Home"></a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+        <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+        </div>
+        <div class="drawer-body mb-2 md:mb-0">
+            <ul class="nav navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Orders</a>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="true">
+                Categories
+                </button>
+                <div class="menu">
+                <a class="menu-item" href="#">Electronics</a>
+                <a class="menu-item" href="#">Fashion</a>
+                <a class="menu-item" href="#">Footwear</a>
+                <a class="menu-item" href="#">Decoration</a>
+                <a class="menu-item" href="#">Essentials</a>
+                <a class="menu-item" href="#">Kitchenware</a>
+                <hr class="menu-divider">
+                <a class="menu-item" href="#">Items on Sale</a>
+                <a class="menu-item" href="#">Buy again</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" type="button">Wishlist</a>
+            </li>
+            </ul>
+            <button type="button" class="btn-outline theme-secondary cart_btn">Cart 0<img src="Assets/SVGs/cart.svg" alt="" height="20px" width="20px">
+            </button>
+        </div>
+        </dialog>
+    </div>
+    </nav>
+
+    <!-- Carousel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-autoplay="true" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Carousel-New/2.webp" class="d-block w-100 rounded-5" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Carousel-New/3.webp" class="d-block w-100 rounded-5" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Carousel-New/4.webp" class="d-block w-100 rounded-5" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Carousel-New/5.jpg" class="d-block w-100 rounded-5" alt="...">
+                </div>
+            </div>
+        </div>
+
+
+    <div class="separator">
+    </div>
+
+    <!-- Product cards -->
+
+    <div class="container">
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/1.webp" class="card-img-top" alt="Helmets">
+        <div class="card-body">
+            <h4 class="card-title">Helmets</h4>
+            <p class="card-text"><span>Rs.1500-12000</span><br> Ride safe with Vega, Studds, Steelbirds and more.</p>
+            <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/2.jpg" class="card-img-top" alt="Sport shoes">
+        <div class="card-body">
+            <h4 class="card-title">Sports shoes</h4>
+            <p class="card-text"><span>Rs.999-3500</span><br> Never Stop. Check from Addidas, Puma, Redtape and more.</p>
+           <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/3.webp" class="card-img-top" alt="speaker">
+        <div class="card-body">
+            <h4 class="card-title">Party Speakers</h4>
+            <p class="card-text"><span>Rs.1000-14999</span><br> Party hard with JBL, Boat party speakers.</p>
+            <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/4.jpg" class="card-img-top" alt="iphone">
+        <div class="card-body">
+            <h4 class="card-title">iPhones</h4>
+            <p class="card-text"><span>Rs.74000-150000</span><br> Check out the latest iPhones with best ever cameras and battery.</p>
+            <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/5.webp" class="card-img-top" alt="samsung phone">
+        <div class="card-body">
+            <h4 class="card-title">Samsung Galaxy S24 Ultra</h4>
+            <p class="card-text"><span>Rs.139000</span><br> Grab the all new Samsung Galaxy with 8X digital zoom.</p>
+            <a href="#" class="btn-subtle theme-inverse">Buy Now!</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/6.webp" class="card-img-top" alt="Analogue watch">
+        <div class="card-body">
+            <h4 class="card-title">Classic time-pieces</h4>
+            <p class="card-text"><span>Rs.10999-25000</span><br> New collection from Fossil, Tissot, Casio, Omega and more.</p>
+            <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/7.webp" class="card-img-top" alt="smart watch">
+        <div class="card-body">
+            <h4 class="card-title">Smart watches</h4>
+            <p class="card-text"><span>Rs.1999-5000</span><br> Check out latest drops from FireBolt, Boat, Pebble, Fastrack and more.</p>
+            <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/8.webp" class="card-img-top" alt="Groceries">
+        <div class="card-body">
+            <h4 class="card-title">Grocery</h4>
+            <p class="card-text"><span>Rs.50-1000</span><br> Get all you groceries delivered at your doorstep.</p>
+           <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+         <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/9.webp" class="card-img-top" alt="Buddha Statue">
+        <div class="card-body">
+            <h4 class="card-title">Home Decoration items</h4>
+            <p class="card-text"><span>Rs.800-3599</span><br> Decorate your home with beautiful ornamentals.</p>
+            <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/10.jpg" class="card-img-top" alt="Mixer">
+        <div class="card-body">
+            <h4 class="card-title">Kitchen Appliances</h4>
+            <p class="card-text"><span>Rs.999-10000</span><br>Make your cooking hour the happiest with Sujata, Prestige, Futura, Hawkins and more.</p>
+            <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+        <img src="Assets/Cards/11.jpg" class="card-img-top" alt="Fash wash">
+        <div class="card-body">
+            <h4 class="card-title">Skin care</h4>
+            <p class="card-text"><span>Rs.250-2499</span><br>Take care of your skin this summer with excitng range of sunscreens, face washes, serums and more.</p>
+            <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+            <div class="cards_group">
+                <img src="Assets/Cards/12.jpg" class="card-img-top" alt="Groceries">
+                <img src="Assets/Cards/13.jpg" class="card-img-top" alt="Groceries">
+                <img src="Assets/Cards/14.jpg" class="card-img-top" alt="Groceries">
+                <img src="Assets/Cards/15.jpg" class="card-img-top" alt="Groceries">
+            </div>
+        <div class="card-body">
+            <h4 class="card-title">More products...</h4>
+            <p class="card-text">Jwellery, Speakers, Sunglasses, Storage boxes and more at best prices.</p>
+           <a href="#" class="btn-subtle theme-inverse">Explore</a>
+        </div>
+        </section>
+    
+    </div>
+
+    <div class="separator"></div>
+    <!-- footer -->
+    
+    <div class="bottom">
+        <div class="EYN_logo">
+            <a href="#home"><img src="Assets/EYN Logo.png" alt="EYN logo" width="100px" height="80px"></a>
+            <h6>Everything You Need.</h6>
+        </div>
+
+        <div class="section1">
+            <ul>
+                <h4>Contact Us</h4>
+                <li><a href="">Customer care</a></li>
+                <li><a href="">Support ticket</a></li>
+                <li><a href="">Feedback</a></li>
+                <li><a href="">Sell on EYN</a></li>
+            </ul>
+        </div>
+
+        <div class="section2">
+            <ul class="list2">
+                <h4>Follow us</h4>
+                <li><a href="#"><img src="Assets/SVGs/instagram-svgrepo-com.svg" height="15px" width="15px"><span>Instagram</span></a></li>
+                <li><a href=""><img src="Assets/SVGs/facebook-svgrepo-com.svg" height="15px" width="15px"><span>Facebook</span></a> </li>
+                <li><a href=""><img src="Assets/SVGs/X_logo_2023.svg" height="15px" width="15px"><span>X.com</span></a></li>
+                <li><a href=""><img src="Assets/SVGs/youtube-168-svgrepo-com.svg" height="15px" width="15px"><span>YouTube</span></a></li>
+                <li><a href=""><img src="Assets/SVGs/Threads_(app)_logo.svg" height="15px" width="15px"><span>Threads</span></a></li>
+            </ul>
+        </div>
+    
+        <div class="subscribe">
+            <form action="post">
+                <label for="email">Subscibe to our Newsletter!</label>
+                <input type="text" placeholder="Enter your email">
+            </form>
+        </div>
+    </div>
+
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
