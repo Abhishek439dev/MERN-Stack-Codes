@@ -1,4 +1,5 @@
-Check out the live preview of the exercice here.
+Check out the live preview of the exercise here.
+https://abhishek439dev.github.io/MERN-Stack-Codes/CSS/Grids
 
 CSS Grids is a tool to create 2D layouts of complex shapes. These layouts are somewhat responsive as well. 
 We can apply CSS grids to a number of divs by setting display property to grid. 
