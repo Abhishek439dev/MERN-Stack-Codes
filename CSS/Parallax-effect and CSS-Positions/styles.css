@@ -1,0 +1,55 @@
+hmtl{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+.first_image{
+    background-image: url(Assets/mountains.jpg);
+}
+.second_image{
+    background-image: url(Assets/River.jpg);
+}
+.third_image{
+    background-image: url(Assets/forest.jpg);
+}
+.fourth_image{
+    background-image: url(Assets/waterfall.jpg);
+}
+
+body{
+    margin: 0;
+}
+.image{
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+p{
+    padding: 20px;
+    background: #db7312;
+    background: linear-gradient(45deg, rgba(219, 115, 18, 1) 0%, rgba(9, 121, 58, 1) 53%, rgba(0, 212, 255, 1) 100%);
+    border: 2px solid rgb(3, 99, 24);
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.image h4{
+    position: relative;
+    top: 50%;
+    text-align: center;
+    letter-spacing: 2rem;
+    font-size: x-large;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
