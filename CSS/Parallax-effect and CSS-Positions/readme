@@ -1,0 +1,20 @@
+Check the preview of parallax website here.
+
+
+Parallax effect is a website design trend which is achieved using a few CSS properties. In this effect the speed of scrolling of the content is different from the
+scrolling speed of Images due to which it gives a sense of stationary background images with text scrolling above the images.
+The CSS properties are applied to the images of the page. these are as follows,
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+background-attachment: fixed; fixes the image on the page. The 'background-position' property sets the position of images and 'background-size' determines its 
+size or coverage on the page.
+
+The CSS positions is a property which is used to set a position of an element on the page. The commonly used CSS position values are,
+> position: static; It does not move the element. The element stays fixed on its position according to the normal flow of HTML. 
+The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+> position: relative; When its set to an element, the element can be positioned using the top, right, bottom, left, and z-index properties with respect to
+its normal position.
+> position: absolute; When its set on an element, the element is removed from the normal flow of document and no space is provided for it on the place where it 
+should be placed. Now, the position of this element is set in relation to the closest ancestoral element with a CSS position property applied.
