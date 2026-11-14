@@ -1,0 +1,12 @@
+Variables are the named memory locations which hold some values.
+JavaScript is dynamically  typed which means that here we need not to specify the data-type of the variable.
+The data-types of the data being stored is automatically determined. 
+
+Variables can be declared with the help of three keywords which are, var, let and const.
+These different ways of declaring variables differ on the basis of their scope and ability to reinitialize in a program. 
+
+var was used most commonly but it is less commonly used today because,
+var can be accessed under a function or globally in the program. let and const can be used under the block of code where it is declared.
+var and let can be reinitialize with a new value in the program while const cannot be reinitialize. The value assigned to it stays constant.
+A variable declared with var keyword can be redeclared while a variable declared with let or const cannot be redeclared.
+var and let are not required to initialize with an initial value while const requires an initial value to be decalred.
