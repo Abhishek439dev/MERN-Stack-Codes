@@ -18,7 +18,7 @@ console.log(single, available);
 
 // iv) undefined: if a variable is not assigned with a value. It is an undefined variable, its value is 'undefiend'.
 let life;
-console.log(life);
+console.log(life);  //undefined
 
 // v) Object: It is a non-primitive data-type, which is used to store key-value pairs under a pair of curley-braces.
 
@@ -33,16 +33,25 @@ var identity = {
     }
 }
 
-console.log(identity);
-console.log(identity.professional);
-console.log(identity.name);
-console.log(identity.professional.salary);
+console.log(identity); 
+/*output:
+{
+  name: 'Abhishek',
+  country: 'India',
+  pin: 244713,
+  professional: { job: 'software developer', salary: 123456.34, company: 'Google' }
+}
+*/
+
+console.log(identity.professional); // { job: 'software developer', salary: 123456.34, company: 'Google' }
+console.log(identity.name);         //  Abhishek
+console.log(identity.professional.salary);  //123456.34
 
 
-/* vi) null: It represents that we know what type of value should be assigned but we intentionally haven't assigned any value to the variable.
+/* vi) null: It is used when we know what type of value should be assigned but we intentionally haven't assigned any value to the variable.
 null is a datatype in itself but in javaScript the developer have mistakenly set the datatype of null variables to 'object' (historical bug). */
 
 let name = null;
-console.log(name);
-console.log(typeof(name));
+console.log(name);           //null
+console.log(typeof(name));   //object (historical bug)
 
