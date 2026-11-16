@@ -1,0 +1,9 @@
+Operators are the special symbols which are used to perform some operation on some values called as operands. 
+These are of following types.
+
+i) Arithmetic 
+ii) Assignment
+iii) Relational / Comparison
+iv) Equality 
+v) Logical
+vi) Bitwise
