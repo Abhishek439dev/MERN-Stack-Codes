@@ -1,8 +1,17 @@
-a = typeof("Abhishek");   //string
-b = typeof(true);         //boolean
-d = typeof(245.54);       //number
-e = typeof(null);         //object (historical bug)
-f = typeof(undefined);    //undefined
+a = typeof("Abhishek");   
+console.log(a);           //string
+
+b = typeof(true);         
+console.log(b);           //boolean
+
+d = typeof(245.54);       
+console.log(d);           //number
+
+e = typeof(null);         
+console.log(e);           //object (historical bug)
+
+f = typeof(undefined);    
+console.log(f);           //undefined
 
 laptop = {
     model: "HP pavillion",
@@ -10,12 +19,5 @@ laptop = {
     memory: 15.9,
     touch_screen: false
 }
-
-g = typeof(laptop);      //object
-
-console.log(a);
-console.log(b);
-console.log(d);
-console.log(e);
-console.log(f);
-console.log(g);
+g = typeof(laptop);      
+console.log(g);           //object
