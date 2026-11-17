@@ -1,8 +1,8 @@
-a = typeof("Abhishek");
-b = typeof(true);
-d = typeof(245.54);
-e = typeof(null); //historical bug
-f = typeof(undefined);
+a = typeof("Abhishek");   //string
+b = typeof(true);         //boolean
+d = typeof(245.54);       //number
+e = typeof(null);         //object (historical bug)
+f = typeof(undefined);    //undefined
 
 laptop = {
     model: "HP pavillion",
@@ -11,7 +11,7 @@ laptop = {
     touch_screen: false
 }
 
-g = typeof(laptop);
+g = typeof(laptop);      //object
 
 console.log(a);
 console.log(b);
