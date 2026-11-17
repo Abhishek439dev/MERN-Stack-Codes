@@ -1,0 +1,3 @@
+typeof operator is used to determine the data type of a value.
+Example: typeof(12);
+//Output: number
