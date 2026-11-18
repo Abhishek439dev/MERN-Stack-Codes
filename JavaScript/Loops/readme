@@ -1,0 +1,6 @@
+Looping statements allow us to repeat a task multiple times without writing the code again and again. 
+JavaScript provides following types of loops.
+i) while loop
+ii) do-while loop
+iii) for-loop
+iv) for-of loop
