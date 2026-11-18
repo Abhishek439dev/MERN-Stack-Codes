@@ -50,6 +50,6 @@ console.log(e, f);
 
 console.log("__________________");
 
-//v) ternary operator:
+//ternary operator:
 y = 10 > 6 ? "10 is greatest" : "6 is greater";
 console.log(y);
