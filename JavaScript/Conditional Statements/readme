@@ -1,0 +1,7 @@
+Conditional statements are used to take decisions in a program. They can change the flow of program execution. 
+There are a number of conditional statements in javascript.
+i) if-statement
+ii) if-else statement
+iii) if-elseif statements
+iv) nested if-else
+v) switch-case statements
