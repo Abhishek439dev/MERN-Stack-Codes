@@ -1,8 +1,10 @@
-day = 4;
+/*These statements are better choice when we have to make quick choices as in if-else conditions all the conditions are evaluated.
+These are better option when the code block that needs to execute is small and simple.*/
+let day = 4;
 switch(day){
     case 1:
         console.log("Monday");
-        break;
+        break;  //these are necessary to break the execution of all other code statements below.
     case 2:
         console.log("Tuesday");
         break;
@@ -21,6 +23,6 @@ switch(day){
     case 7:
         console.log("Sunday");
         break;
-    default:
+    default:   //it is necessary to handle a case other than the specified ones.
         console.log("Invalid day.")
 }
