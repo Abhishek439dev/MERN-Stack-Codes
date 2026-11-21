@@ -1,0 +1,3 @@
+functions are the block of code which can perform some operations. They can be used multiple times in the code without re-writing the whole logic again and again.
+This increases the code readability and reusability. It helps in debugging the code easily as any modification required in the logic needs to be corrected at one
+place in the code. 
