@@ -1,0 +1,2 @@
+Array is a collection of items. In javascript, array can store items of different data types. These items are stored in a contiguous memory location. 
+Arrays are indexed based starting from zero. 
