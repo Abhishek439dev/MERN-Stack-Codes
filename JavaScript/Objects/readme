@@ -1,0 +1,3 @@
+Objects are the non-primitive data type as they are created using all the other primitive data-types like string, number and boolean.
+Objects are used to store key-value pairs.
+An object can have duplicate values but keys are unique and they can't repeat in an object.
