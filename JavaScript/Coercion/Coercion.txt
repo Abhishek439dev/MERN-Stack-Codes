@@ -1,0 +1,6 @@
+To perform different operations, the JavaScript language performs some operations (abstract operations) upon the operands to convert the operands into suitable 
+types as per the operations.
+This type-conversion can be done manually by the programmer(explicit type-conversion) or automatically and internally by the language based on certain rules, this is 
+known as implicit type conversion also called as Coercion. 
+
+Coercion is necessary for an operation to execute and complete successfully. It relies on a set of algorithms called as Abstract operations.
