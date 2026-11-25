@@ -1,0 +1,3 @@
+Abstract Operations are a set of algorithms in the JavaScript language which are performed internally by the language for performing different operation sucessfully.
+These operations cannot be used by the programmers but we can study these operations and understand how the JavaScript language internally works.
+These operations are written in the ECMAScript language documentation to understand the internal working and logic behind the operations.
