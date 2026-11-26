@@ -21,5 +21,35 @@ and if the hint is number, then in the array methodNames add the two methods in 
 iv) As per the hint type, the methods present in the methodNames array are called one by one in that order and the result is stored in a variable result.
 If the result obtained after calling the function is not an object (its primitive), return the result. If the result obtained after calling the first method is an
 object, call the second method and check if the result is an object or primitive type.
-
 If both the methods in the array have been called and neither of them have given a primitive result, Throw TypeError Exception.
+
+v) Both toString and valueOf methods are built-in methods present in all the JavaScript Objects. When they are called, they have a pre-defined behaviour.
+The toString returns [object Object] which is actually a string value and the valueOf returns the same object in which it is present.
+EX: let obj = {
+        x: 10;
+    }
+
+console.log(obj.toString()); // output:  [object Object]
+console.log(typeof obj.toString()); // output: string
+
+console.log(obj.valueOf()); // output: Object {x: 10}
+console.log(typeof obj.valueOf()); // output: Object
+
+We can override these methods as well to change their default retuning value.
+
+let obj1 = {
+    x: 20;
+    toString() {
+      return "Hello learning JavaScript";
+    }
+
+    valueOf() {
+      return 10;
+    }
+}
+
+console.log(obj.toString()); // output: Hello learning JavaScript
+console.log(typeof obj.toString()); // output: string
+
+console.log(obj.valueOf()); // output: 10
+console.log(typeof obj.valueOf()); // output: number
