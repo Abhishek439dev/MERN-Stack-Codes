@@ -38,7 +38,7 @@ console.log(typeof obj.valueOf()); // output: object
 We can override these methods as well to change their default retuning value.
 
 let obj1 = {
-    x: 20;
+    x: 20,
     toString() {
       return "Hello learning JavaScript";
     }
