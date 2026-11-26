@@ -23,8 +23,10 @@ console.log(4+2);     // 6
 console.log(4+"2");   // "42"
 console.log(1+"1");   // "11"
 
-let obj = {};
 
+/*Operations with Objects
+Example 1: No Overriding of methods*/
+let obj = {};
 console.log(10 - obj);   //NaN
 
 /* 
@@ -40,4 +42,48 @@ number NaN.
 The final output of coercion of obj will be NaN.
 
 so, console.log(10 - NaN); //Output:  NaN
+Note: Even if the object was not empty and has some key-values the output remained same. As the output is not dependent on contents of object, as an object with some
+entries will also result in calling the toString() method which will return that [object Object] string which again converts to NaN.
 */
+
+//Example 2: valueOf() overrided to return a number.
+let obj2 = {
+    x: 10, 
+    valueOf(){
+        return 99;
+    }
+}
+
+console.log(100 - obj);  //output: 1
+/* Here the obj2 will be converted to a primitive type using the ToPrimitive and OrdinaryToPrimitive abstract operations to finally call the valueOf() method.
+The valueOf() is overrided to return 99. Hence, the calculation occurs (100 - 99) = 1
+*/
+
+//Example 3: toString() overrided to return a number string.
+let obj3 = {
+    x: 10, 
+    toString(){
+        return "80";
+    }
+}
+
+console.log(100 - obj3); //output: 20
+/* In this example, the obj3 will be converted to a primitive type using the ToPrimitive and OrdinaryToPrimitive abstract operations to finally call the valueOf() 
+method, but it will return its default value which the the object but its non-primitive. As a result the next method toString will be called andn it will return a 
+string value "80". This value is send to ToNumber abstract operation where it is converted to Number 88. 
+Hence, the calculation occurs (100 - 80) = 20
+*/
+
+
+//Example 4: toString() overrided to return an object.
+let obj4 = {
+    x: 10, 
+    toString(){
+        return {};
+    }
+}
+console.log(100 - obj4); //output: TypeError
+
+/* Here the obj4 will undergo coercion as above to finally call the methods. At first the valueOf() method is called which returns the original object obj4, as it is
+non-primitive, the loop calls the second function toString() which returns an empty object {}. Now, as both the methods have returned object instead of a primitive
+value. A TypeError exception is thrown because this object obj4 cannot be converted to a primitve value */
