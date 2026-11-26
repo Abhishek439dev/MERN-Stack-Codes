@@ -1,0 +1,25 @@
+ToPrimitive is an Abstract operation in JavaScript used by other Abstract operations to convert the Non-primitive object type operands to primitive type.
+This operation takes two inputs, ToPrimitive(input, preferred_type);
+
+The first input is the operand that we want to convert to primitive type and the second input preferred_type is an optional input which is used when an object can convert
+to multiple primitive data types, in order to set the preferred type.
+The preferred_type can be either 'string', 'number' or 'default' (when there's no preferred type mentioned).
+
+if the preferred_type is not set, then set the variable hint to default, which will also convert to 'number'.
+if the preferred_type is string, then set the variable hint to string.
+if the preferred_type is number, then set the variable hint to number.
+
+algorithm:
+i) The operation checks the input, if the input is already of primitive type it returns the same input as output.
+ii) if the input is not primitive and it is of object type, call the OrdinaryToPrimitive ( obj, hint ) abstract operation.
+the OrdinaryToPrimitive ( obj, hint ) operation takes the object input (which needs to be convert) and the hint type which can be either "string" or "number" (both strings).
+
+iii) The abstract operation OrdinaryToPrimitive ( obj, hint ) first checks if the input is an Object or not otherwise it throws a TypeError exception.
+Then if the hint is string, then it create an array methodNames and add two methods in the sequence << "toString", "valueOf" >>
+and if the hint is number, then in the array methodNames add the two methods in opposite order which is << "valueOf", "toString" >>
+
+iv) As per the hint type, the methods present in the methodNames array are called one by one in that order and the result is stored in a variable result.
+If the result obtained after calling the function is not an object (its primitive), return the result. If the result obtained after calling the first method is an
+object, call the second method and check if the result is an object or primitive type.
+
+If both the methods in the array have been called and neither of them have given a primitive result, Throw TypeError Exception.
