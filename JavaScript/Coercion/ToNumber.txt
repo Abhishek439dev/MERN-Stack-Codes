@@ -1,0 +1,18 @@
+The ToNumber Abstract operation is called in coercion (implicit type conversion) to convert the operands to numbers.
+Both the operands are passed to the ToNumber abstract operation to convert them to numeric values. 
+
+i) If the arguments are numbers, then the operation returns the same argument back. Ex: (2 + 3) = 5
+
+ii) If the arguments are boolean values, then for 'true' return 1 and for 'false' return 0. Ex: (5 - true) = (5 - 1) = 4
+
+iii) If the argument is Null, then return 0. Ex: (4 - Null) = (4 - 0) = 4
+
+iv) If the argument is undefined, then return NaN. Ex: (2 - undefined) = (2 - NaN) = NaN
+
+v) If the argument is a number in the form of a string, convert it to a number. Ex: "4567"
+   4 * 10^3 + 5 * 10^2 + 6 * 10^1 + 7 * 10^0 = 4*1000 + 5*100 + 6*10 + 7*1 = 4567
+  Note: if there is a string without numbers or with alphabets then return NaN. Ex: "453gsu34"
+
+vi) If argument is a symbol, return TypeError exception.
+
+vii) If the argument is an object, then call the ToPrimitive Abstract operation to convert the object to a primitive datatype value.
