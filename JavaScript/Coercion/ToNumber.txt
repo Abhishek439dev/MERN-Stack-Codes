@@ -15,4 +15,5 @@ v) If the argument is a number in the form of a string, convert it to a number. 
 
 vi) If argument is a symbol, return TypeError exception.
 
-vii) If the argument is an object, then call the ToPrimitive Abstract operation to convert the object to a primitive datatype value.
+vii) If the argument is an object, then call the ToPrimitive Abstract operation to convert the object to a primitive datatype value. 
+The result obtained after ToPrimitive operation is send again to ToNumber operation to obtain final output of the object operand.
