@@ -16,15 +16,56 @@ console.log(5-null);  // 5-0 = 5
 //for undefined argument, return NaN.
 console.log(5-undefined);  // 5-NaN = NaN
 
-//the plus operator performs normal arithmetic addition when both operands are numbers.
-console.log(4+2);     // 6
 
-//But when any of the two operands is a string, it concatenates the operands to return a string. 
+//The PLUS operator performs normal arithmetic addition when both operands are numbers.
+console.log(4+2);     // 6
+//If anyone of the operands is a string, the plus operator will perform string concatenation.
 console.log(4+"2");   // "42"
 console.log(1+"1");   // "11"
 
+//If none of the operands is a string(they can be boolean or object or null etc.), it will try to convert the operands to a number and perform addition.
+console.log(3+undefined);  // (3+NaN) = NaN
+console.log(3+null); // (3+0) = 3
 
-/*Operations with Objects
+//Addition operations with objects.
+let obj = {}; //empty object. 
+console.log(4+ obj); //(4 + [object Object] = 4[object Object]     ([object Object is a string] hence string concatenation took place.).
+
+//toString overrided to return a number string.
+let obj1 = {
+    toString(){
+        return "89";
+    }
+}
+console.log(11+obj1);  //(11 + "89") = string concatenation as one of the operands is a string.  = "1189"
+
+//toString overrided to return a number.
+let obj2 = {
+    toString(){
+        return 89; 
+    }
+}
+console.log(11+obj2);  //addition takes place -> 11+89 = 100
+
+//toString overrided to return a boolean value.
+let obj3 = {
+    toString(){
+        return true;
+    }
+}
+console.log(11+obj3);  //Anything except string converts to a number in plus operation. hence, 11 + 1 = 12
+
+//toString overrided to return an object.
+let obj4 = {
+    toString(){
+        return {};
+    }
+}
+console.log(11+obj4); //both valueOf() and toString() returns object which leads to TypeError exception.
+
+
+
+/*Subtract Operations with Objects
 Example 1: No Overriding of methods*/
 let obj = {};
 console.log(10 - obj);   //NaN
