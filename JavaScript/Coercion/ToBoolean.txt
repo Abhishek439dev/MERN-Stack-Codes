@@ -1,0 +1,10 @@
+The ToBoolean abstract operation converts an argument to a boolean value as per the following rules.
+i) undefined converts to false.
+ii) null converts to false.
+iii) Boolean arguments are returned as it is.
+iv) In numbers, -0, +0, 0 and NaN converts to false and all other values convert to true.
+v) In strings, an empty string "" converts to false and any non-empty string converts to true.
+vi) symbols convert to true.
+vii) objects convert to true.
+
+Note: The values that convert to false are, undefined, null, false, +0, -0, 0, NaN and "". All other values convert to true values.
